@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --Softblue: #8BABD9;
+    --Cyan: #00FFF6;
+    --mainBG: #0C182B;
+    --cardBG: #14243D;
+    --line: #2E415A;
+    --Outfit: 'Outfit', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--Outfit);
+    box-sizing: border-box;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+
+body{
+    background-color: var(--mainBG);
+    display: grid;
+    justify-content: center;
+    place-items: center;
+}
+
+.card{
+    background-color: var(--cardBG);
+    place-content: center;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.card, .card-img{
+    width: 20rem;
+    border-radius: 1.5rem;
+}
+
+.card-img {
+    position: relative;
+    display: flex;
+}
+
+.overlay{
+    border-radius: 1.5rem;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsla(178, 100%, 50%, 0.325);
+}
+
+.card-img img {
+    max-width: 20rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.card-img:hover .overlay  {
+    border-radius: 1.5rem;
+    width: 18rem;
+    display:block;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container{
+    padding: 1rem;
+}
+
+.title{
+    color: white;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.title:hover{
+    color: var(--Cyan);
+}
+
+.text{
+    color: var(--Softblue);
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+
+.text-nft{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.text-value{
+    font-weight: 600;
+    color: var(--Cyan);
+    align-items: center;
+}
+
+.text-value img{
+    padding-right: .5rem;
+}
+
+.time-nft{
+    font-weight: 400;
+    color: var(--Softblue);
+}
+
+.container hr {
+    border: 1px solid #2E415A;
+    margin-top: .5rem;
+}
+
+.creation{
+    display: flex;
+    padding-top: 1rem;
+    align-items: center;
+}
+
+.creation img{
+    max-width: 3rem;
+    padding-right: .5rem;
+}
+
+.creation-text{
+    color: var(--Softblue);
+}
+
+.creation-text a{
+    color: white;
+}
+.creation-text a:hover{
+    color: var(--Cyan);
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
